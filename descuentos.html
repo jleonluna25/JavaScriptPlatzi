@@ -14,13 +14,22 @@
 <body>
 
     <form>
-        <img src="" alt="logo tienda"/>
-        <h1>C&aacute;lculo de precio con cupones.</h1>
-        <span>
+        <div id="cabecera">
+            <img src="https://img.icons8.com/dotty/80/000000/shopping-cart.png"alt="logo carrito compras" />
+            <h3>C&aacute;lculo de precio con cupones.</h3>
+        </div>
+        <span id="camposForm">
             <label for="precioBruto">Precio neto</label>
             <input type="number" name="" id="precioBruto">
+            <span id="opcionDescuento">
+                <input type="radio" id="descuentoSimple" name="tipoDescuento" value="1">
+                <label for="descuento">Descuento simple</label>
+                <input type="radio" id="descuentoCupon" name="tipoDescuento" value="2">
+                <label for="descuento">Descuento cup&oacute;n</label>
+            </span>
             <label for="categoriasDescuento">Descuento</label>
             <select name="categoriasDescuento" id="categoriasDescuento">
+                <option value="0"></option>
                 <option value="5">5%</option>
                 <option value="10">10%</option>
                 <option value="15">15%</option>
@@ -29,14 +38,19 @@
             </select>
             <label for="cuponDescuento">Cupones</label>
             <select name="cuponDescuento" id="cuponDescuento">
+                <option value="0"></option>
                 <option value="3">3%</option>
                 <option value="7">7%</option>
                 <option value="12">12%</option>
             </select>
             <button>Calcular precio</button>
+            <img src="https://img.icons8.com/carbon-copy/100/000000/coins.png" alt="logo monedas" />
             <label for="precioFinal">Precio final</label>
-            <input type="number" name="" id="precioFinal">
-            <img src="" alt="imagen descriptiva del producto"/>
+            <input type="number" name="" disabled id="precioFinal">
+            <img src="https://img.icons8.com/ios/50/000000/money-box--v1.png" alt="logo alcancia"/>
+            <label for="ahorro">Usted ahorr&oacute;</label>
+            <input type="number" name="" disabled id="ahorro">
+            <img src="https://frutocuatro.com/wp-content/uploads/2018/05/5000-blanco-frente.jpg" height="300 px" alt="imagen descriptiva del producto"/>
         </span>
     </form>
 </body>
