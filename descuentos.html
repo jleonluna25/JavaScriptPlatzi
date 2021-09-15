@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
@@ -13,22 +14,26 @@
 
 <body>
 
-    <form>
-        <div id="cabecera">
-            <img src="https://img.icons8.com/dotty/80/000000/shopping-cart.png"alt="logo carrito compras" />
-            <h3>C&aacute;lculo de precio con cupones.</h3>
+    <form class="formulario">
+        <div class="cabecera--formulario">
+            <img class="cabecera--formulario__imagen" src="https://img.icons8.com/dotty/80/000000/shopping-cart.png"
+                alt="logo carrito compras" />
+            <h3 class="cabecera--formulario__encabezado">C&aacute;lculo de precio con cupones.</h3>
         </div>
-        <span id="camposForm">
-            <label for="precioBruto">Precio neto</label>
-            <input type="number" name="" id="precioBruto">
-            <span id="opcionDescuento">
-                <input type="radio" id="descuentoSimple" name="tipoDescuento" value="1">
-                <label for="descuento">Descuento simple</label>
-                <input type="radio" id="descuentoCupon" name="tipoDescuento" value="2">
-                <label for="descuento">Descuento cup&oacute;n</label>
-            </span>
-            <label for="categoriasDescuento">Descuento</label>
-            <select name="categoriasDescuento" id="categoriasDescuento">
+        <span class="seccion">
+            <label class="seccion__etiqueta" for="precioBruto">Precio neto</label>
+            <input class="seccion__entrada" type="number" name="" id="precioBruto">
+        </span>
+
+        <span id="opcionDescuento" class="seccion">
+            <label for="descuentoSimple" class="seccion__etiqueta--simple">Descuento simple</label>
+            <input type="radio" id="descuentoSimple" class="seccion__radio--simple" name="tipoDescuento" value="1">
+            <label for="descuentoCupon" class="seccion__etiqueta--cupon">Descuento cup&oacute;n</label>
+            <input type="radio" id="descuentoCupon" class="seccion__radio--cupon" name="tipoDescuento" value="2">
+        </span>
+        <span class="seccion">
+            <label for="categoriasDescuento" class="seccion__etiqueta">Descuento</label>
+            <select name="categoriasDescuento" id="categoriasDescuento" disabled>
                 <option value="0"></option>
                 <option value="5">5%</option>
                 <option value="10">10%</option>
@@ -36,22 +41,27 @@
                 <option value="20">20%</option>
                 <option value="25">25%</option>
             </select>
-            <label for="cuponDescuento">Cupones</label>
-            <select name="cuponDescuento" id="cuponDescuento">
+            <label for="cuponDescuento" class="seccion__etiqueta">Cupones</label>
+            <select name="cuponDescuento" id="cuponDescuento" disabled>
                 <option value="0"></option>
                 <option value="3">3%</option>
                 <option value="7">7%</option>
                 <option value="12">12%</option>
             </select>
             <button>Calcular precio</button>
-            <img src="https://img.icons8.com/carbon-copy/100/000000/coins.png" alt="logo monedas" />
-            <label for="precioFinal">Precio final</label>
-            <input type="number" name="" disabled id="precioFinal">
-            <img src="https://img.icons8.com/ios/50/000000/money-box--v1.png" alt="logo alcancia"/>
-            <label for="ahorro">Usted ahorr&oacute;</label>
-            <input type="number" name="" disabled id="ahorro">
-            <img src="https://frutocuatro.com/wp-content/uploads/2018/05/5000-blanco-frente.jpg" height="300 px" alt="imagen descriptiva del producto"/>
         </span>
+        <span class="seccion">
+            <label for="precioFinal" class="seccion__etiqueta">Precio final</label>
+            <input type="number" class="seccion__entrada" name="" disabled id="precioFinal">
+            <img id="img1" class="seccion__imagen" src="https://img.icons8.com/carbon-copy/100/000000/coins.png" alt="logo monedas" />
+        </span>
+        <span class="seccion">
+            <label for="ahorro" class="seccion__etiqueta" >Usted ahorr&oacute;</label>
+            <input type="number" class="seccion__entrada" name="" disabled id="ahorro">
+            <img id="img2" class="seccion__imagen" src="https://img.icons8.com/ios/50/000000/money-box--v1.png" alt="logo alcancia" />
+        </span>
+        <img id="img3" src="https://frutocuatro.com/wp-content/uploads/2018/05/5000-blanco-frente.jpg" height="300 px"
+            alt="imagen descriptiva del producto" />
     </form>
 </body>
 

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  #33ff57 ;
+}
+
+.formulario {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 2.2em;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    font-family: 'comic neue';
+    /*align-items: center;*/
+    margin: 0 auto;
+    margin-bottom: 3em;
+    margin-top: 4em;
+    padding-top: 1em;
+    width: 40rem;
+}
+
+.cabecera--formulario {
+    margin-bottom: 35px;
+}
+
+.cabecera--formulario__imagen {
+    left: 7em;
+    position: relative;
+    top: 1.5em;
+    width: 80px;
+}
+
+.cabecera--formulario__encabezado {
+    bottom: 1.5em;
+    position: relative;
+    left: 12em;   
+}
+
+.seccion {
+    margin: 0px 0 16px 100px;
+}
+.seccion__etiqueta {
+    margin: 10px;
+}
+
+#img1 {
+    width: 60px;
+}
+#img2 {
+    width: 60px;
+}
+#img3 {
+    height: 200px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 25px;
+}
