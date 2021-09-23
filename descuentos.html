@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <script src="descuentos.js"></script>
     <title>Pr&aacute;ctica javaScript 3</title>
 </head>
 
@@ -27,9 +28,9 @@
 
         <span id="opcionDescuento" class="seccion">
             <label for="descuentoSimple" class="seccion__etiqueta--simple">Descuento simple</label>
-            <input type="radio" id="descuentoSimple" class="seccion__radio--simple" name="tipoDescuento" value="1">
+            <input type="radio" id="descuentoSimple" class="seccion__radio--simple" name="tipoDescuento" value="1" onfocus="ejecutar()">
             <label for="descuentoCupon" class="seccion__etiqueta--cupon">Descuento cup&oacute;n</label>
-            <input type="radio" id="descuentoCupon" class="seccion__radio--cupon" name="tipoDescuento" value="2">
+            <input type="radio" id="descuentoCupon" class="seccion__radio--cupon" name="tipoDescuento" value="2" onselect="ejecutar()">
         </span>
         <span class="seccion">
             <label for="categoriasDescuento" class="seccion__etiqueta">Descuento</label>
