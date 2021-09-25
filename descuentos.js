@@ -1,32 +1,38 @@
-
-const precioBruto = document.getElementById("precioBruto");
-const radio = document.getElementsByName("tipoDescuento");
-
-const v = function calculoPrecio() {
-    document.getElementById("categoriasDescuento").removeAttribute("disabled");
-    /**
-     *acá tendría que validar si se ha seleccionado alguna opción del combo
-     */
-    const descuento = document.getElementById("categoriasDescuento");
-    const calculo = precioBruto.value * 100 / descuento.value;
-    const precioFinal = document.getElementById("precioFinal");
-    const ahorro = document.getElementById("ahorro");
-    precioFinal.innerHTML(String(precioBruto.value - calculo));
-    ahorro.innerHTML(String(calculo))
-}
-
-function ejecutar() {
-    if (radio.value == 1) {
-        v();
+var flag= 0;
+function habilitarDescuento() {
+    /**/
+    const radio = document.getElementsByName("tipoDescuento");
+    if (radio[0].checked) {
+        document.getElementById("categoriasDescuento").removeAttribute("disabled");
+        document.getElementById("cuponDescuento").disabled=true;
+        flag= 1;
     } else {
-        if (radio.value == 2) {
-            v();
+        if (radio[1].checked) {
+            document.getElementById("cuponDescuento").removeAttribute("disabled");
+            document.getElementById("categoriasDescuento").disabled=true;
+            flag= 2;
         } else {
-            window.alert("No est&aacute; funcionando bien la captura del valor del radio :/");
+            window.alert("No está funcionando bien la captura del valor del radio :/" + radio.value);
         }
     }
 }
 
-function r() {
-    document.getElementById("categoriasDescuento").removeAttribute("disabled");
+function calcularPrecio() {
+    const precioBruto = document.getElementById("precioBruto");
+    window.alert(document.getElementById("categoriasDescuento").value);
+    document.getElementById("precioFinal").value=9;
+    if (flag == 1){/*reemplazar las condiciones por las mismas de la primera función*/ 
+        const descuento = precioBruto.value*document.getElementById("categoriasDescuento").value/100;
+        document.getElementById("precioFinal").value=precioBruto.value - descuento;
+        document.getElementById("ahorro").value=descuento;
+    }else{
+        if (flag == 2){
+            const descuento = precioBruto.value*document.getElementById("cuponDescuento").value/100;
+            document.getElementById("precioFinal").value=precioBruto.value - descuento;
+            document.getElementById("ahorro").value=descuento;
+        }else{
+            window.alert("Error con variable flag"+flag);
+        }
+
+    }
 }
