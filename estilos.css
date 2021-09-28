@@ -46,6 +46,11 @@ body {
     margin: 10px;
 }
 
+.seccion__entrada {
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px 0px rgba(192, 190, 190, 0.5);
+}
+
 #img1 {
     width: 60px;
 }
