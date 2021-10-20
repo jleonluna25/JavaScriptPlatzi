@@ -1,0 +1,92 @@
+* {
+    color: #FFFF00 ;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #C71585;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 16px;
+}
+.header {
+    display: flex;
+    height: 6.25rem;
+    outline:1px none;
+}
+.container {
+    background: linear-gradient(#C71585 ,#8A2BE2);
+    height: inherit;
+    display: flex;
+    margin-top: 4px;
+}
+.content {
+    /*outline:1px solid cyan;*/
+    flex: 1;
+}
+.aside {
+    outline:1px solid #FFFF00;
+    flex: 0 0 25%;
+}
+.footer {
+    background-color: #8A2BE2;
+    display: flex;
+    font-family: 'Muli', sans-serif;
+    justify-content: space-around;
+    outline:1px solid #FFFF00;
+    padding: 15px;
+    height: 10rem;
+    margin-top: auto;
+}
+.menu {
+    background-color: #C71585;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+.menu-item {
+    background-color: #C71585;
+    list-style: none;
+    flex: 1;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin-top: 2px;
+    outline: 2px solid ;
+    padding-top: 1rem;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+}
+.menu-item:hover {
+    background-color: #FFFF00;
+    color: black;
+    cursor: pointer;
+    flex: 4.5;
+}
+.logoHeader {
+    background-color: #C71585;
+    height: 6.25rem;
+    margin: .25em .5em;/*verificar rem vs em*/
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+.contacto a, span {
+    color: #FFFF00;
+    padding-top: 4px;
+    text-decoration: none;
+}
+.contacto a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.redes img {
+    padding-top: 5px;
+}
+.copyr {
+    display: flex;
+    align-items: flex-end;
+}
