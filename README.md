@@ -10,7 +10,7 @@ Este es un proyecto pr&aacute;ctico escrito en ***Javascript***, **CSS** y **HTM
 function prueba(){
 	console.log("Hola mundo!");
 }
-
+```
 
 >r&iacute;o grande de la  Magdalena.
 ![]https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing
