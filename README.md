@@ -13,11 +13,11 @@ function prueba(){
 ```
 
 >r&iacute;o grande de la  Magdalena.
-![]https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing
+![](https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing)
 
 
--[x]Actitud.
+- [ ] Actitud.
 
 
 
-&copy 10/2021. Jes&uacute;s Luna
+&copy;  10/2021. Jes&uacute;s Luna.
