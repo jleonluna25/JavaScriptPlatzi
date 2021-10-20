@@ -6,17 +6,17 @@ Este es un proyecto pr&aacute;ctico escrito en ***Javascript***, **CSS** y **HTM
 
 >"Me lo contaron y lo olvid&eacute;; lo vi y lo entend&iacute;; lo hice y lo aprend&iacute;". - Confucio.
 
-```javascipt
+```javascript
 function prueba(){
 	console.log("Hola mundo!");
 }
 ```
 
 >r&iacute;o grande de la  Magdalena.
-![](https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing)
+![ ](https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing)
 
 
-- [ ] Actitud.
+- [X] Actitud.
 
 
 
