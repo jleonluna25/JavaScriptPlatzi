@@ -12,11 +12,11 @@ function prueba(){
 }
 ```
 
->r&iacute;o grande de la  Magdalena.
-![ ](https://drive.google.com/file/d/1oAiEdXeK9L2OVEtC0e4STAE_stpoYo_b/view?usp=sharing)
+>c&iacute;rculo crom&aacute;tico.
+![](https://i.pinimg.com/736x/a5/1d/08/a51d080bae74407741ee3c55c05cfb44.jpg)
 
 
-- [X] Actitud.
+- [ ] Actitud.
 
 
 
